@@ -77,10 +77,66 @@ img{
 }
 
 #menu-bars{
-    display: none;
+    display: none; /*esconder menu mobile*/
 
 }
 
+
+.banner{
+    width: 100%;
+    position: relative;
+
+}
+
+.banner-position{
+    width: 100%;
+    height: 37.5em;
+    position: absolute;/*position absolute cola emcima do pai dele que seria o relative (banner)*/
+    top: 0;
+    /* background-color: rgba(0, 0, 255, 0.267); */
+}
+
+.banner-content{
+    width: 95%;
+    height: 93.5%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: rgba(245, 222, 179, 0.205); */
+}
+
+.banner-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    /* background-color:rgba(128, 255, 0, 0.5); */
+}
+
+.banner-text h1{
+    font-size: 5.62em;
+
+}
+
+.banner-text p{
+    font-size: 1.87em;
+
+}
+
+.banner-text a{
+    font-size: 1.87em;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration:none;
+    background-color: var(--red);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+
+}
 
 @media screen and (max-width :74.93em){
 
@@ -95,4 +151,5 @@ img{
        display: block;
 
     }
+
 }
