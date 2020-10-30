@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root{
 
@@ -84,7 +85,7 @@ img{
 
 .banner{
     width: 100%;
-    position: relative;
+    position: relative;/*position pai*/
 
 }
 
@@ -141,6 +142,7 @@ img{
 .jogos{
     width: 100%;
     height: 7.5em;
+    color: #fff;
     /* background-color: chartreuse; */
 
 }
@@ -172,7 +174,7 @@ img{
 
 .angulation{
     width:100%;
-    height: 25em;
+    height: 24em;
     background-color: var(--background);
     transform: skewy(-5deg);/*rotaciona  o eixo Y*/
 }
@@ -189,7 +191,7 @@ img{
 .about-text{
     width: 50%;
     color: #fff;
-    text-align: justify;
+    text-align: justify; /*alinhar o texto como se estivesse em uma caixa*/
 
 }
 
@@ -200,8 +202,8 @@ img{
 }
 
 .about-text p{
-    font-size: 1.125em;
-    margin-bottom: 1em;
+    font-size: 1.125em;/*tamanho da letra*/
+    margin-bottom: 1em;/*mandar para baixo o conteudo*/
 
 }
 
@@ -209,6 +211,56 @@ img{
     max-width: 31.87em;
 
 }
+
+.jogos-aovivo, .jogos-embreve{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.875em;/*tamanho da fonte 30px*/
+    text-transform: uppercase;
+    /* border-right: solid 1px #fff; */
+
+    
+}
+
+/* .jogos-aovivo p, .jogos-embreve p{
+
+} */
+
+.jogos-aovivo::after{
+    content:'';
+    height: 2.666em;
+    border: solid 1px #fff;
+    margin: 0 1.5em;   
+}
+
+.partida{
+    width:7em ;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1em;
+    
+}
+
+.partida img{
+    max-width:1.8em ;/*54px*/
+   
+}
+.time1 img{
+    margin-left: 0.5em;
+
+}
+
+.time2 img{
+    margin-right: 0.5em;
+}
+.time1, .time2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+}
+
 
 @media screen and (max-width :74.93em){
 
@@ -220,7 +272,7 @@ img{
 
 @media screen and (max-width :35.93em){
     #menu-bars{
-       display: block;
+       display: block;/*mostrar menu mobile*/
 
     }
 
