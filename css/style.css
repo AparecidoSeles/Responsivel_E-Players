@@ -222,10 +222,6 @@ img{
     
 }
 
-/* .jogos-aovivo p, .jogos-embreve p{
-
-} */
-
 .jogos-aovivo::after{
     content:'';
     height: 2.666em;
@@ -260,7 +256,54 @@ img{
     align-items: center;
     font-weight: 400;
 }
+.bk-sobre{
+    width: 100%;
+     height: auto;
+     background-color: #080324;
+     display: flex;
+}
+.noticias{
+    width: 100%;
+    height:auto;
+    flex-wrap: wrap;
+    /* background-color: rgb(231, 186, 186); */
+    
+}
 
+.noticias h2{
+    font-size: 2.18em;
+    padding: 1em 4em;
+    color: white;
+}
+.info-cards{
+    width: 70%;
+    height: auto;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 1.5em;
+    
+}
+.cards{
+    width:14.81em ;
+    height:22.75em ;
+     background-color: rgb(8, 4, 4);
+     
+}
+
+.horarios{
+    width: 43.75em;
+    height:46,93em;
+    background-color: red;
+}
+
+.times .card2{
+    background-color: seagreen;
+    width:14.81em ;
+    height:22.75em ;
+    background-color: rgb(8, 4, 4);
+}
 
 @media screen and (max-width :74.93em){
 
