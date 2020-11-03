@@ -35,9 +35,9 @@ img{
 }
 
 .content{
-    width: 80%;
-    max-width: 75em;                                /*em significa */
-    height: 100%;
+    width: 92%;
+    max-width: 75em; 
+    height:90%;
     margin: auto;
     /* background-color: burlywood; */
 }
@@ -190,9 +190,10 @@ img{
 
 .about-text{
     width: 50%;
+    margin-top: 6em;
     color: #fff;    
     text-align: justify;                         /*alinhar o texto como se estivesse em uma caixa*/
-
+    
 }
 
 .about-text h2{
@@ -202,35 +203,41 @@ img{
 }
 
 .about-text p{
-    font-size: 1.125em;                         /*tamanho da letra*/
+    font-size: 1em;                         /*tamanho da letra*/
     margin-bottom: 1em;                         /*mandar para baixo o conteudo*/
 
 }
 
 .about-position img{
     max-width: 31.87em;
+    margin-top: 4em;
 
 }
 
 .jogos-aovivo, .jogos-embreve{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;  
-    font-size: 1.875em;                         /*tamanho da fonte 30px*/
+    font-size: 1.575em;                         /*tamanho da fonte 30px*/
     text-transform: uppercase;  
     /* border-right: solid 1px #fff; */
 
     
 }
 
-.jogos-aovivo::after{
-    content:'';
-    height: 2.666em;
-    border: solid 1px #fff;
-    margin: 0 1.5em;   
+.jogos-aovivo h2, .jogos-embreve h2{
+    font-size: 1em;
+    /* background-color:rgba(255, 0, 0, 0.397); */
+}
+
+.linha{
+    /* content:''; */
+    height: 4em;
+    border: solid 1.5px #fff;
+    /* margin: 0 1.5em;    */
 }
 
 .partida{
-    width:8em ;
+    width:10em ;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -260,14 +267,14 @@ img{
 .bk-sobre{
     width: 100%;
      height: 55.12em;
-     background-color:rgb(14, 13, 13);
+     background-color:#1E1C21;
      display: flex;
      /* background-color: red; */
 }
 .noticias{
-    width:55.50em;
+    width:73%;
     height:auto;
-    margin-left: 8em;
+    margin-left: 2.5em;
     flex-wrap: wrap;
     /* background-color: green; */
     
@@ -276,9 +283,8 @@ img{
 .noticias h2{
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
-     padding-top: 0.6em;                           /*aliha a palavra NOTÍCIA no ponto certo*/
+    padding-top: 0.6em;                           /*aliha a palavra NOTÍCIA no ponto certo*/
     color: white;
-    /* text-transform: uppercase; */
     /* background-color:blueviolet;  */
 }   
 
@@ -287,22 +293,27 @@ img{
     height: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     /*padding: 0 1em; */                             /*distancia dos cards*/
     /* background-color: rgb(25, 0, 255); */
     
 }
 .cards{
-    width:14.81em ;
-    height:21.87em ;
-    background-image: linear-gradient(to bottom ,#000000, rgba(99, 99, 99, 0.466),rgba(109, 109, 109, 0.158),#000);
+    width: 100%;
+    height:23.125em;     
+    max-width:15em ;
     margin-top: 1.5em;
+    background-image: linear-gradient(to bottom ,#000000, rgba(99, 99, 99, 0.466),rgba(109, 109, 109, 0.158),#000);
+    box-shadow:0 0 3px 0.5px #fff ;            /*colocar sombta da borda no card*/
 }
 
-.cards h2{
+.cards h3{
     width: 14.8em;
     font-size:1em ;
     padding: 0 2.5em;
+    color:white;
+    text-transform: uppercase;
     
 }
 
@@ -310,16 +321,16 @@ img{
     width: 20.25em;
     height: 14.6em;
     margin:auto;
-    font-size: 0.65em;
+    font-size: 0.7em;
     color: white;
     display: flex;
     text-align: justify;
     padding-top: 2em;
 }
 .horarios{
-    width:15em;
+    width:23%;
     height:auto;
-    /* background-color: red; */
+    /* background-color: rgb(0, 255, 242); */
 }
 
 
@@ -332,11 +343,11 @@ img{
 }
 .times {   
     width:14.81em ;
-    height: 45.5em ;
+    height: 47.53em ;
     display:flex;
     margin-top: 2em;
-    justify-content:flex-end;
-    align-items:stretch;
+    justify-content:space-around;
+    /* align-items:stretch; */
     background-image: linear-gradient(to bottom , black, rgb(44, 44, 44),black);
 }
 
@@ -344,23 +355,28 @@ img{
     width:7.7em ;
     display: flex;
     align-items: center;
-    margin-top: 1.5em;                          /*Distancia das partidas com os horarios*/
-    color: white;
-    /* background-color:blue; */
+    margin-top: 2.5em;                          /*Distancia das partidas com os horarios*/
+     color: white; 
+    /* background-color:rgb(255, 0, 221); */ 
     
 }
 
 
 .day{
+    width: 85%;
+    max-width: 200px;
     font-size: 0.5em;
     padding:1em 0 0 6em;
     color: white;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
     /* background-color: brown; */
 }
 
 .rodape{
-    /* background-color: violet; */
     position: relative;
+    /* background-color: violet; */
 }
 .box-rodape{
     width: 100%;
@@ -387,7 +403,7 @@ img{
     color: white;
     text-decoration: none;
     padding-top: 6em;
-    
+    /* background-color: white; */
 }
 
 .logo-eplayers{
@@ -399,8 +415,8 @@ img{
 
 
 .bottom-texto{
-    width: 350px;
-    height: 112px;
+    width: 21.87em;
+    height: 7em;
     margin: 3.5em 0 3em 4em;
     padding-bottom: 2em;
     display: flex;
@@ -419,8 +435,8 @@ img{
 }
 
 .email{
-    width: 150px;
-    height:27px ;
+    width:8.5em;
+    height:1.68em;
     font-size: 1.15em;
     color: rgba(2, 2, 2, 0.644);
     text-decoration:none;
@@ -431,8 +447,8 @@ img{
 }
 
 .cdstr{
-    width: 150px;
-    height: 27px;
+    width: 9.37em;
+    height: 1.68em;
     font-size: 1.15em;
     color: #fff;
     text-decoration:none;
