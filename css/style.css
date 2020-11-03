@@ -21,8 +21,8 @@
 
 body{
     font-family:var(--font);
-    font-size: 16px; /*tamanho padrão de layout*/
-    background : var(--background);
+    font-size: 16px;                              /*tamanho padrão de layout*/
+    background-color: var(--background);
 }
 
 img{
@@ -36,7 +36,7 @@ img{
 
 .content{
     width: 80%;
-    max-width: 75em;/*em significa */
+    max-width: 75em;                                /*em significa */
     height: 100%;
     margin: auto;
     /* background-color: burlywood; */
@@ -58,7 +58,7 @@ img{
 }
 
 .menu ul{
-    list-style-type:none;/*retira as bolinhas do lado */
+    list-style-type:none;                          /*retira as bolinhas do lado */
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -77,22 +77,22 @@ img{
     
 }
 
-#menu-bars{
-    display: none; /*esconder menu mobile*/
+#menu-bars{ 
+    display: none;                               /*esconder menu mobile*/
 
 }
 
 
 .banner{
     width: 100%;
-    position: relative;/*position pai*/
+    position: relative;                        /*position pai*/
 
 }
 
 .banner-position{
     width: 100%;
     height: 100%;
-    position: absolute;/*position absolute cola emcima do pai dele que seria o relative (banner)*/
+    position: absolute;                    /*position absolute cola emcima do pai dele que seria o relative (banner)*/
     top: 0;
     /* background-color: rgba(0, 0, 255, 0.267); */
 }
@@ -176,7 +176,7 @@ img{
     width:100%;
     height: 24em;
     background-color: var(--background);
-    transform: skewy(-5deg);/*rotaciona  o eixo Y*/
+    transform: skewy(-5deg);                         /*rotaciona  o eixo (Y)*/
 }
 
 .about-position{
@@ -190,8 +190,8 @@ img{
 
 .about-text{
     width: 50%;
-    color: #fff;
-    text-align: justify; /*alinhar o texto como se estivesse em uma caixa*/
+    color: #fff;    
+    text-align: justify;                         /*alinhar o texto como se estivesse em uma caixa*/
 
 }
 
@@ -202,8 +202,8 @@ img{
 }
 
 .about-text p{
-    font-size: 1.125em;/*tamanho da letra*/
-    margin-bottom: 1em;/*mandar para baixo o conteudo*/
+    font-size: 1.125em;                         /*tamanho da letra*/
+    margin-bottom: 1em;                         /*mandar para baixo o conteudo*/
 
 }
 
@@ -214,9 +214,9 @@ img{
 
 .jogos-aovivo, .jogos-embreve{
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 1.875em;/*tamanho da fonte 30px*/
-    text-transform: uppercase;
+    font-weight: bold;  
+    font-size: 1.875em;                         /*tamanho da fonte 30px*/
+    text-transform: uppercase;  
     /* border-right: solid 1px #fff; */
 
     
@@ -230,12 +230,12 @@ img{
 }
 
 .partida{
-    width:7em ;
+    width:8em ;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-left: 1em;
-    
+    /* background-color: red; */
 }
 
 .partida img{
@@ -255,55 +255,192 @@ img{
     justify-content: space-between;
     align-items: center;
     font-weight: 400;
+    /* background-color: red; */
 }
 .bk-sobre{
     width: 100%;
-     height: auto;
-     background-color: #080324;
+     height: 55.12em;
+     background-color:rgb(14, 13, 13);
      display: flex;
+     /* background-color: red; */
 }
 .noticias{
-    width: 100%;
+    width:55.50em;
     height:auto;
+    margin-left: 8em;
     flex-wrap: wrap;
-    /* background-color: rgb(231, 186, 186); */
+    /* background-color: green; */
     
 }
 
 .noticias h2{
-    font-size: 2.18em;
-    padding: 1em 4em;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+     padding-top: 0.6em;                           /*aliha a palavra NOTÍCIA no ponto certo*/
     color: white;
-}
+    /* text-transform: uppercase; */
+    /* background-color:blueviolet;  */
+}   
+
 .info-cards{
-    width: 70%;
+    width: 52.25em;
     height: auto;
-    margin-bottom: 1em;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 1.5em;
+    /*padding: 0 1em; */                             /*distancia dos cards*/
+    /* background-color: rgb(25, 0, 255); */
     
 }
 .cards{
     width:14.81em ;
-    height:22.75em ;
-     background-color: rgb(8, 4, 4);
-     
+    height:21.87em ;
+    background-image: linear-gradient(to bottom ,#000000, rgba(99, 99, 99, 0.466),rgba(109, 109, 109, 0.158),#000);
+    margin-top: 1.5em;
 }
 
+.cards h2{
+    width: 14.8em;
+    font-size:1em ;
+    padding: 0 2.5em;
+    
+}
+
+.cards p{
+    width: 20.25em;
+    height: 14.6em;
+    margin:auto;
+    font-size: 0.65em;
+    color: white;
+    display: flex;
+    text-align: justify;
+    padding-top: 2em;
+}
 .horarios{
-    width: 43.75em;
-    height:46,93em;
-    background-color: red;
+    width:15em;
+    height:auto;
+    /* background-color: red; */
 }
 
-.times .card2{
-    background-color: seagreen;
-    width:14.81em ;
-    height:22.75em ;
-    background-color: rgb(8, 4, 4);
+
+.horarios h2{
+    width:15.31em ;
+    font-size: 1.87em;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 0.6em;                             /* aliha a palavra NOTÍCIA no ponto certo */
+    color: white;
 }
+.times {   
+    width:14.81em ;
+    height: 45.5em ;
+    display:flex;
+    margin-top: 2em;
+    justify-content:flex-end;
+    align-items:stretch;
+    background-image: linear-gradient(to bottom , black, rgb(44, 44, 44),black);
+}
+
+.horarios .partida{
+    width:7.7em ;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;                          /*Distancia das partidas com os horarios*/
+    color: white;
+    /* background-color:blue; */
+    
+}
+
+
+.day{
+    font-size: 0.5em;
+    padding:1em 0 0 6em;
+    color: white;
+    /* background-color: brown; */
+}
+
+.rodape{
+    /* background-color: violet; */
+    position: relative;
+}
+.box-rodape{
+    width: 100%;
+    height:12em ;
+    display: flex;
+    color: white;
+    /* background-color: red; */
+   
+}
+
+
+.links{
+    margin-left: 9em;
+}
+.links, .paginas{
+    width:10.87em ;
+    height: auto;
+    padding: 1em 0;
+    color:white;
+/* background-color: rgba(255, 255, 255, 0.904); */
+}
+
+.links a, .paginas a{
+    color: white;
+    text-decoration: none;
+    padding-top: 6em;
+    
+}
+
+.logo-eplayers{
+    
+    padding-top: 5em;                     /*PADDING-TOP SERVE PARA EMPPURRAR PARA BAIXO OQUE ESTA DENTRO DA CAIXA */
+    /* margin-top: 5em; */               /*MARGIN-TOP SERVE PARA EMPURRAR PARA BAIXO A CAIXA , NÃO OQUE ESTA DENTRO DELA*/
+    /* background-color:red; */
+}
+
+
+.bottom-texto{
+    width: 350px;
+    height: 112px;
+    margin: 3.5em 0 3em 4em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    /* background-color:rgb(240, 11, 11); */
+}
+
+.bottom-texto p{
+    font-size: 0.8em;
+    /* margin-top: 4em; */
+    padding-right: 2em;
+    /* background-color:blue; */
+}
+
+.email{
+    width: 150px;
+    height:27px ;
+    font-size: 1.15em;
+    color: rgba(2, 2, 2, 0.644);
+    text-decoration:none;
+    background-color: white;
+    text-align: center;
+    margin-right: 1em;
+
+}
+
+.cdstr{
+    width: 150px;
+    height: 27px;
+    font-size: 1.15em;
+    color: #fff;
+    text-decoration:none;
+    background-color: #9824F3;
+    text-align: center;
+    /* border-radius: 0.5em; */              /*serve para arredondar as bordas*/
+}
+
 
 @media screen and (max-width :74.93em){
 
