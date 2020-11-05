@@ -377,105 +377,102 @@ img{
 }
 
 .rodape{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    /* background-color: violet; */
-}
-.box-rodape{
-    width: 33%;
-    /* height:12em ; */
-    display: flex;
-
-    color: white;
-    /* background-color: red; */
-   
-}
-
-
-/* .links{ */
-    /* margin-left: 3em; */
-/* } */
-.links, .paginas{
-    width:10.87em ;
-    height: auto;
     padding: 1em 0;
-    color:white;
-    background-color: rgba(221, 10, 10, 0.904);
+    color: #fff;
+    /* background-color:white; */
 }
 
-.links a, .paginas a{
-    color: white;
-    text-decoration: none;
-    padding-top: 6em;
-    /* background-color: white; */
-}
-
-.logo-eplayers{
-    width: 33%;
-    padding-top: 5em;                     /*PADDING-TOP SERVE PARA EMPPURRAR PARA BAIXO OQUE ESTA DENTRO DA CAIXA */
-    /* margin-top: 5em; */               /*MARGIN-TOP SERVE PARA EMPURRAR PARA BAIXO A CAIXA , NÃO OQUE ESTA DENTRO DELA*/
-    background-color:blue;
-}
-
-
-.bottom-texto{
-    width: 100%;
-    max-width: 21.87em;
-    height: auto;
-    margin: 3.5em 0 3em 4em;
-    padding-bottom: 2em;
+.links-footer{
+    width: 30%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-between;
+    /* background-color: #9824F3; */
+   /* margin-left:2.5em; */
+}
+
+.links h2{
+    font-size: 1.5em;
     color: #fff;
-    background-color:rgb(240, 11, 11);
-}
-
-.bottom-texto p{
-    font-size: 0.8em;
-    /* margin-top: 4em; */
-    padding-right: 2em;
-    /* background-color:blue; */
-}
-
-.email{
-    width:8.5em;
-    height:1.68em;
-    font-size: 1.15em;
-    color: rgba(2, 2, 2, 0.644);
-    text-decoration:none;
-    background-color: white;
-    text-align: center;
-    margin-right: 1em;
 
 }
 
-.cdstr{
-    width: 9.37em;
-    height: 1.68em;
-    font-size: 1.15em;
+.links ul{
+    margin-top: 0.5em;
     color: #fff;
-    text-decoration:none;
-    background-color: #9824F3;
-    text-align: center;
-    /* border-radius: 0.5em; */              /*serve para arredondar as bordas*/
-    /* background-color: white; */
 }
 
+.links li{
+    margin-left: 2em;
+}
+
+.links a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo-rodape{
+    width:30%;
+}
+.sociais{
+    width: 35%;
+    /* background-color: red; */
+}
+
+.newslatter h2{
+    font-size: 0.875em;
+    margin-bottom: 0.5em;
+}
+
+.newslatter form{
+    display: flex;
+    outline: #c20000;
+}
+
+.newslatter input[type="email"]{
+    width: 10em;                               /*largura do botão*/
+    height: 2em;                              /*altura do botão*/
+    font-size: 1em;
+    padding-left: 1em; 
+}
+
+.newslatter input[type="email"]::placeholder{
+    font-weight: bold; 
+}
+
+.newslatter input[type="button"]{
+    width:10em;
+    height: 2em;
+    font-size: 1em;
+    background-color:#8326EF;
+    color: #fff;
+    text-transform: uppercase;
+    outline:#8326EF; 
+    font-weight: bold 0.8em;
+}
+.siga-nos{
+    margin-top: 1em;
+
+}
+
+/* .siga-nos img{
+    width: 4.5em;
+    height: 4em; */
+    /* background-color: #fff; */
+ 
 
 @media screen and (max-width :74.93em){
 
 }
 
 @media screen and (max-width :47.93em){
-
+    #menu-bars{
+        display: block;/*mostrar menu mobile*/
+    }
 }
 
 @media screen and (max-width :35.93em){
     #menu-bars{
-       display: block;/*mostrar menu mobile*/
+        display: block;/*mostrar menu mobile*/
 
     }
 
