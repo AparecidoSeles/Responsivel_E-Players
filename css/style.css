@@ -231,9 +231,9 @@ img{
 
 .linha{
     /* content:''; */
-    height: 4em;
+    height: 1em;
     border: solid 1.5px #fff;
-    /* margin: 0 1.5em;    */
+    margin: 0 1.5em;   
 }
 
 .partida{
@@ -269,10 +269,11 @@ img{
      height: 55.12em;
      background-color:#1E1C21;
      display: flex;
+     
      /* background-color: red; */
 }
 .noticias{
-    width:73%;
+    width:68%;
     height:auto;
     margin-left: 2.5em;
     flex-wrap: wrap;
@@ -289,7 +290,8 @@ img{
 }   
 
 .info-cards{
-    width: 52.25em;
+
+    width: 50em;
     height: auto;
     display: flex;
     align-items: center;
@@ -330,12 +332,14 @@ img{
 .horarios{
     width:23%;
     height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* background-color: rgb(0, 255, 242); */
 }
 
 
 .horarios h2{
-    width:15.31em ;
     font-size: 1.87em;
     font-family: 'Roboto', sans-serif;
     padding-top: 0.6em;                             /* aliha a palavra NOTÍCIA no ponto certo */
@@ -350,16 +354,16 @@ img{
     /* justify-content:space-around; */
     box-shadow:0 0 3px 0.5px #fff ;
     background-image: linear-gradient(to bottom , black, rgb(44, 44, 44),black);
-     /* align-items:stretch; */
+
 }
 
 .horarios .partida{
     width:7.7em ;
     display: flex;
     align-items: center;
-    margin-top: 2.5em;                          /*Distancia das partidas com os horarios*/
-     color: white; 
-    /* background-color:rgb(255, 0, 221); */ 
+    margin: 2em 0.4em 0  ;                          /*Distancia das partidas com os horarios*/
+    color: white; 
+    /* background-color:rgb(255, 0, 221);  */
     
 }
 
@@ -461,6 +465,47 @@ img{
  
 
 @media screen and (max-width :74.93em){
+
+    .menu a{
+        font-size: 1.3em;
+        padding: 0 0.9em;
+    }
+    
+    .menu a:hover{
+    background-color:var(--red);
+    }
+
+
+    .banner-text h1{
+        font-size: 5em;
+    }
+
+    .banner-text p{
+        font-size: 1.1em;
+    }
+
+    .jogos li{
+        padding-left:1em;
+    }
+
+
+    .desktop-jogos{
+        display: none;
+    }
+
+    .info-cards{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex  ;
+    padding-right:  1em;
+    background-color: #fff;
+
+    }
+
+    .card2{
+        display: none;
+    }
 
 }
 
