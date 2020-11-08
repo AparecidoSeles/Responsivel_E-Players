@@ -27,6 +27,7 @@ body{
 
 img{
     width: 100%;
+    /* background-color: #c20000; */
 }
 .topo{
     width: 100%;
@@ -67,7 +68,7 @@ img{
 .menu a{
     color: #fff;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.7em;
     padding: 0.9em 0.5em;
     text-transform: uppercase;
 }
@@ -136,7 +137,6 @@ img{
     padding: 0.5em 1em;
     border-radius: 0.5em;
     margin-top: 1em;
-
 }
 
 .jogos{
@@ -211,7 +211,7 @@ img{
 .about-position img{
     max-width: 31.87em;
     margin-top: 4em;
-
+    /* background-color: #c20000; */
 }
 
 .jogos-aovivo, .jogos-embreve{
@@ -231,7 +231,7 @@ img{
 
 .linha{
     /* content:''; */
-    height: 1em;
+    height: 3em;
     border: solid 1.5px #fff;
     margin: 0 1.5em;   
 }
@@ -266,14 +266,14 @@ img{
 }
 .bk-sobre{
     width: 100%;
-     height: 55.12em;
-     background-color:#1E1C21;
-     display: flex;
-     
-     /* background-color: red; */
+    height: auto;
+    background-color:#1E1C21;
+    display: flex;
+    /* justify-content: center; */
+    /* background-color: red; */
 }
 .noticias{
-    width:68%;
+    width:auto;
     height:auto;
     margin-left: 2.5em;
     flex-wrap: wrap;
@@ -294,7 +294,6 @@ img{
     width: 50em;
     height: auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     /*padding: 0 1em; */                             /*distancia dos cards*/
@@ -330,7 +329,7 @@ img{
     padding-top: 2em;
 }
 .horarios{
-    width:23%;
+    width:auto;
     height:auto;
     display: flex;
     flex-direction: column;
@@ -344,6 +343,7 @@ img{
     font-family: 'Roboto', sans-serif;
     padding-top: 0.6em;                             /* aliha a palavra NOTÍCIA no ponto certo */
     color: white;
+    /* background-color: yellow; */
 }
 .times {   
     width:14.81em ;
@@ -358,7 +358,7 @@ img{
 }
 
 .horarios .partida{
-    width:7.7em ;
+    width:auto;
     display: flex;
     align-items: center;
     margin: 2em 0.4em 0  ;                          /*Distancia das partidas com os horarios*/
@@ -369,13 +369,12 @@ img{
 
 
 .day{
-    width: 85%;
-    max-width: 200px;
+    width:auto;
     font-size: 0.5em;
     padding:1em 0 0 6em;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     text-align: justify;
     /* background-color: brown; */
 }
@@ -383,7 +382,7 @@ img{
 .rodape{
     padding: 1em 0;
     color: #fff;
-    /* background-color:white; */
+    /* background-color:blue; */
 }
 
 .links-footer{
@@ -429,7 +428,7 @@ img{
 
 .newslatter form{
     display: flex;
-    outline: #c20000;
+    /* outline: #000; */
 }
 
 .newslatter input[type="email"]{
@@ -460,10 +459,12 @@ img{
 
 /* .siga-nos img{
     width: 4.5em;
-    height: 4em; */
-    /* background-color: #fff; */
- 
+    height: 4em; 
+   
+} */
 
+
+/* (de 992px á  1199px) */
 @media screen and (max-width :74.93em){
 
     .menu a{
@@ -484,8 +485,25 @@ img{
         font-size: 1.1em;
     }
 
+    .about-position img{
+    max-width: 29em;
+    margin: 6.5em 0 0 2em;
+    /* background-color: #c20000; */
+    }
+
+    .about-text h2{
+        font-size: 2em;
+        margin-bottom: 0.5em;
+
+    }
+
+    .about-text p{
+        font-size: 0.9em;                         /*tamanho da letra*/
+        margin-bottom: 1em;                         /*mandar para baixo o conteudo*/
+    }
     .jogos li{
         padding-left:1em;
+        /* background-color: var(--blue); */
     }
 
 
@@ -493,13 +511,17 @@ img{
         display: none;
     }
 
+    .bk-sobre{
+        padding-bottom: 2em;
+    }
+
     .info-cards{
-    width: 100%;
-    justify-content: space-between;
+    width: 95%;
+    justify-content: space-around;
     align-items: center;
     display: flex  ;
     padding-right:  1em;
-    background-color: #fff;
+    /* background-color: #fff; */
 
     }
 
@@ -507,17 +529,191 @@ img{
         display: none;
     }
 
-}
 
-@media screen and (max-width :47.93em){
-    #menu-bars{
-        display: block;/*mostrar menu mobile*/
+    .links h2{
+        font-size: 1.2em;
+        color: #fff;
+    }
+
+    .links li{
+        margin-left: 1em;
+        font-size: 00.9em;
+    }
+
+    .horarios{
+        padding-right: 2em;
     }
 }
 
+/* de 767px á 991px */
+@media screen and (max-width :61.93em){
+
+    .topo .content {
+        height: 100%;
+        padding-top: 1em;
+        display: flex;
+        flex-direction:column ;
+        /* background-color: red; */
+    }
+
+    .banner-text h1{
+        font-size: 3.5em;
+    
+    }
+    
+    .banner-text p{
+        font-size: 1em;
+    
+    }
+    
+    .banner-text a{
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration:none;
+        background-color: var(--red);
+        padding: 0.3em 0.7em;
+        border-radius: 0.5em;
+        margin-top: 1em;
+    
+    }
+    
+    .about-position img{
+        width: 50%;
+        /* display: none; */
+
+    }
+
+    .about-text h2{
+        font-size: 1.5em;
+
+    }
+    
+    .about-text p{
+        font-size: 0.85em;                         /*tamanho da letra*/
+        margin-bottom: 1em;                         /*mandar para baixo o conteudo*/
+    
+    }
+
+    .jogos h2{
+        font-size: 0.85em;
+        /* color: rgb(223, 53, 53); */
+
+    }
+
+
+    .bk-sobre{
+        padding-bottom: 2em;
+    }
+    .noticias{
+        width:auto;
+        height:auto;
+        margin-left: 2em;
+        flex-wrap: wrap;
+        /* background-color: green; */
+    }
+    
+    .cards{
+        height:23.125em;     
+        max-width:12em ;
+        margin-right: 2em;
+        background-image: linear-gradient(to bottom ,#000000, rgba(99, 99, 99, 0.466),rgba(109, 109, 109, 0.158),#000);
+        box-shadow:0 0 3px 0.5px #fff ;            /*colocar sombra da borda no card*/
+        /* background-color: red; */
+    }
+
+
+    .cards h3{
+        width: auto;
+        font-size: 0.8em;
+        /* background-color: red; */
+    }
+    .cards p{
+        width: auto;
+        display: flex;
+        text-align: justify;
+        padding: 1em;
+        /* background-color:purple; */
+    }
+
+    .horarios{
+        padding-right:0.6em ;
+    }
+
+    .newslatter input[type="email"]{
+        width: 8em;
+    }
+}
+/* de 575x á 766px */
+@media screen and (max-width :47.93em){
+    
+    .topo {
+        height: 100%;
+        display: flex;
+        /* background-color: red; */
+        padding: 1em 0;
+    }
+    .topo img{
+        max-width: 15em;
+    }
+    
+    #menu-bars{
+        display: block;                                  /*mostrar menu mobile*/
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu a{
+        display: none;
+    }
+
+    .banner-text h1{
+        font-size: 2.7em;
+    
+    }
+    
+    .banner-text p{
+        font-size: 1em;
+    
+    }
+    
+    .banner-text a{
+        font-size: 1.2em;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration:none;
+        background-color: var(--red);
+        padding: 0.3em 0.7em;
+        border-radius: 0.4em;
+        margin-top: 1em;
+    
+    }
+    
+    .about-text{
+        width: auto;
+        display:flex;
+        flex-direction: column;
+       text-align: justify;
+        align-items:center;
+    }
+    .about-position img{
+        display: none;
+    }
+    
+    .jogos>content{
+        flex-direction: column;
+        /* background-color: yellow; */
+    }
+
+    .linha{
+        flex-direction: column;
+    }
+}
+
+/* de 0 á 574px*/
 @media screen and (max-width :35.93em){
     #menu-bars{
-        display: block;/*mostrar menu mobile*/
+        display: block;                                      /*mostrar menu mobile*/
 
     }
 
